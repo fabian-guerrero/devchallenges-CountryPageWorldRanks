@@ -6,11 +6,9 @@
   "homepage": "https://fabian-guerrero.github.io/devchallenges-CountryPageWorldRanks",
   "scripts": {
     "predeploy": "npm run build",
-    "predeploy:local": "npm run build:local",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
-    "build": "vite build --base=/devchallenges-CountryPageWorldRanks/.",
-    "build:local": "vite build",
+    "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },

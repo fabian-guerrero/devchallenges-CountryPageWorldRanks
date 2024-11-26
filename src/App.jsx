@@ -11,14 +11,8 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route
-          path="https://fabian-guerrero.github.io/devchallenges-CountryPageWorldRanks/"
-          element={<Home />}
-        />
-        <Route
-          path="https://fabian-guerrero.github.io/devchallenges-CountryPageWorldRanks/country/:countryCode"
-          element={<Country />}
-        />
+        <Route path="/" element={<Home />} />
+        <Route path="/country/:countryCode" element={<Country />} />
       </Routes>
     </>
   );
