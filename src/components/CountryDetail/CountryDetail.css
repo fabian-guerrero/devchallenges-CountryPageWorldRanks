@@ -116,7 +116,6 @@
       &::after {
         content: "";
         width: 1px;
-        /* height: 36px; */
         height: calc(64px - 28px);
         background-color: var(--color-eerie-black);
         display: block;
