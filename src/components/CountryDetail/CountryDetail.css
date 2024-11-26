@@ -1,0 +1,204 @@
+[data-component="country-detail"] {
+  position: relative;
+  z-index: 1;
+
+  .details-wrapper {
+    max-width: 720px;
+    margin: 0 auto;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: calc(100% - 50px);
+      background-color: var(--color-eerie-black);
+      display: inline-block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      border-radius: 10px;
+      border: 1px solid var(--color-auro-metal-saurus);
+    }
+  }
+
+  .details-wrapper-loader {
+    display: flex;
+    flex-direction: column;
+    max-width: 720px;
+    min-height: 908px;
+    margin: 0 auto;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: calc(100% - 50px);
+      background-color: var(--color-eerie-black);
+      display: inline-block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      border-radius: 10px;
+      border: 1px solid var(--color-auro-metal-saurus);
+    }
+
+    .country-flag {
+      display: inline-block;
+      border-radius: 10px;
+      width: 260px;
+      height: 196px;
+      max-width: 260px;
+      max-height: 196px;
+      margin: 0 auto;
+    }
+
+    .country-name {
+      display: inline-block;
+      width: 180px;
+      height: 48px;
+      margin-top: 32px;
+      align-self: center;
+    }
+
+    .population-wrapper,
+    .area-wrapper {
+      width: 250px;
+      height: 64px;
+    }
+
+    .country-oficial-name {
+      display: inline-block;
+      width: 140px;
+      height: 24px;
+      align-self: center;
+    }
+
+    .placeholder-text {
+      display: inline-block;
+      width: 100px;
+      height: 21px;
+    }
+
+    .row-label {
+      width: 200px;
+      height: 21px;
+    }
+
+    .neighbouring-flags-wrapper {
+      .country-flag {
+        width: 80px;
+        height: 85px;
+      }
+    }
+  }
+
+  .country-flag {
+    border-radius: 10px;
+    max-width: 260px;
+    max-height: 196px;
+    margin: 0 auto;
+  }
+
+  .country-oficial-name {
+    margin-top: 12px;
+  }
+
+  .population-and-area {
+    display: inline-flex;
+    gap: 40px;
+    margin: 40px auto 34px;
+
+    .pa-label {
+      position: relative;
+
+      &::after {
+        content: "";
+        width: 1px;
+        /* height: 36px; */
+        height: calc(64px - 28px);
+        background-color: var(--color-eerie-black);
+        display: block;
+        position: absolute;
+        right: -20px;
+        top: -5px;
+      }
+    }
+  }
+
+  .population-wrapper,
+  .area-wrapper {
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+    background-color: var(--color-charleston-green);
+    border-radius: 12px;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .detail-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 20px;
+    border-top: 1px solid var(--color-auro-metal-saurus);
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .row-label {
+    color: var(--color-auro-metal-saurus);
+  }
+
+  .detail-row-neighbouring {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 20px;
+    border-top: 1px solid var(--color-auro-metal-saurus);
+    gap: 24px;
+
+    > p {
+      margin: 0;
+      text-align: left;
+    }
+  }
+
+  .neighbouring-flags-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    .country-flag {
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+      width: 80px;
+      gap: 10px;
+      cursor: pointer;
+      margin: 0;
+    }
+
+    .flag-wrapper {
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .flag {
+      height: 60px;
+      max-width: unset;
+    }
+
+    .flag-name {
+      margin: 0;
+    }
+  }
+}

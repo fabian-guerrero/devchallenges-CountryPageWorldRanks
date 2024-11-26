@@ -1,0 +1,41 @@
+[data-component="country-item-loader"] {
+  display: grid;
+  height: 80px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  column-gap: 32px;
+  row-gap: 24px;
+  text-align: left;
+
+  @media (min-width: 1280px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .placeholder-element {
+    width: 100px;
+    height: 24px;
+    justify-self: start;
+    align-self: center;
+    border-radius: 5px;
+
+    &:nth-child(1) {
+      width: 100px;
+      height: 80px;
+    }
+
+    animation-duration: 1.7s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: placeholderAnimate;
+    background: var(--color-auro-metal-saurus);
+    background: linear-gradient(
+      to right,
+      var(--color-auro-metal-saurus) 2%,
+      var(--color-eerie-black) 18%,
+      var(--color-auro-metal-saurus) 33%
+    );
+    background-size: 500px;
+  }
+}

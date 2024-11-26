@@ -1,0 +1,5 @@
+[data-component="paginator"] {
+  margin-top: 40px;
+  display: inline-flex;
+  gap: 18px;
+}
