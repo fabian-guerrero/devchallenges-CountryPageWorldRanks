@@ -1,10 +1,11 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main-wrapper {
+  max-width: 1200px;
   border: 1px solid var(--color-auro-metal-saurus);
   border-radius: 20px;
   background-color: var(--color-eerie-black);
