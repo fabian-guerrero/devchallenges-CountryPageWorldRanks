@@ -101,14 +101,25 @@
     margin: 0 auto;
   }
 
+  .country-name {
+    max-width: 95%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .country-oficial-name {
     margin-top: 12px;
+    text-align: center;
   }
 
   .population-and-area {
     display: inline-flex;
+    justify-content: center;
+    width: 100%;
     gap: 40px;
     margin: 40px auto 34px;
+    padding: 0 20px;
 
     .pa-label {
       position: relative;
@@ -124,6 +135,11 @@
         top: -5px;
       }
     }
+
+    @media screen and (max-width: 768px) {
+      font-size: 12px;
+      gap: 20px;
+    }
   }
 
   .population-wrapper,
@@ -136,6 +152,11 @@
 
     p {
       margin: 0;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding: 12px;
+      gap: 15px;
     }
   }
 
